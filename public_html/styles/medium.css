@@ -1,0 +1,42 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    nav ul.hide {
+        display: flex;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        list-style-type: none;
+        padding: 0;
+        justify-content: center;
+        overflow: hidden;
+
+    }
+    nav ul li {
+        text-align: center;
+        border-bottom: 1px;
+        background-color: #80a7e5;
+    }
+    nav ul li a {
+        display: inline-flex;
+        font-family: "Georgia";
+        color: blue;
+        padding: 8px 16px;
+        text-decoration: none;
+
+    }
+    nav ul li.active a {
+        background-color: #DF8B2D;
+    }
+    section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
+
+    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+
+}

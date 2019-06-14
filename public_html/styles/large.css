@@ -1,0 +1,38 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    article p.town-article img {
+        width: 29.333%;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        list-style-type: none;
+        width: 100%;
+    }
+    nav ul li {
+        text-align: center;
+        border: .5px solid #fff;
+        border-bottom: 1px;
+    }
+    nav ul li a {
+        display: flex;
+        color: blue;
+        font-weight: bold;
+        text-align: center;
+
+    }
+    nav ul li.active a {
+        background-color: #DF8B2D;
+    }
+    .temps  {
+        display: flex;
+        flex-direction: row;
+        padding-left: 1em;
+        padding-right: 1em;
+        max-width: 75%;
+    }
+}
